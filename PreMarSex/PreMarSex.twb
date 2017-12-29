@@ -1,0 +1,916 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10000.16.0812.0001                               -->
+<workbook source-build='10.0.0 (10000.16.0812.0001)' source-platform='win' version='10.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Tableau1' inline='true' name='federated.0rg9tqm1f9clmu1g72omz0rojrak' version='10.0'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Tableau1' name='textscan.1wl4pgf113x90w1708gqz1umonoa'>
+            <connection class='textscan' directory='C:/Users/admin/Desktop/PreMarSex' filename='Tableau1.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wl4pgf113x90w1708gqz1umonoa' name='Tableau1.txt1' table='[Tableau1#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='YEAR' ordinal='0' />
+            <column datatype='integer' name='ID' ordinal='1' />
+            <column datatype='integer' name='AGE' ordinal='2' />
+            <column datatype='integer' name='SEX' ordinal='3' />
+            <column datatype='string' name='MARITAL' ordinal='4' />
+            <column datatype='string' name='PREMARSX' ordinal='5' />
+            <column datatype='string' name='BIBLE' ordinal='6' />
+            <column datatype='string' name='SEXFREQ' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[Tableau1.txt1]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Tableau1.txt1]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AGE]</local-name>
+            <parent-name>[Tableau1.txt1]</parent-name>
+            <remote-alias>AGE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SEX]</local-name>
+            <parent-name>[Tableau1.txt1]</parent-name>
+            <remote-alias>SEX</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MARITAL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MARITAL]</local-name>
+            <parent-name>[Tableau1.txt1]</parent-name>
+            <remote-alias>MARITAL</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREMARSX</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PREMARSX]</local-name>
+            <parent-name>[Tableau1.txt1]</parent-name>
+            <remote-alias>PREMARSX</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIBLE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BIBLE]</local-name>
+            <parent-name>[Tableau1.txt1]</parent-name>
+            <remote-alias>BIBLE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEXFREQ</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SEXFREQ]</local-name>
+            <parent-name>[Tableau1.txt1]</parent-name>
+            <remote-alias>SEXFREQ</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Tableau1.txt1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bible' datatype='string' name='[BIBLE]' role='dimension' type='nominal' />
+      <column caption='SexPerYear' datatype='real' default-format='N' name='[Calculation_72902071257739264]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='Case [SEXFREQ]&#13;&#10;When &quot;Not at all&quot; Then 0&#13;&#10;When &quot;Once or twice&quot; Then 1.5&#13;&#10;When &quot;Once a month&quot; Then 12&#13;&#10;When &quot;2-3 times a month&quot; Then 30&#13;&#10;When &quot;Weekly&quot; Then 52&#13;&#10;When &quot;2-3 times per week&quot; Then 130&#13;&#10;When &quot;4+ times per week&quot; Then 250&#13;&#10;Else Null&#13;&#10;End' />
+      </column>
+      <column aggregation='CountD' caption='Binned Age (&lt;40)' datatype='string' name='[Calculation_72902071273558017]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [AGE]&lt;40 THEN &apos;&lt;40&apos;&#13;&#10;ELSE &apos;40+&apos;&#13;&#10;END' />
+      </column>
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Marital' datatype='string' name='[MARITAL]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Premarsx' datatype='string' name='[PREMARSX]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Premarsx (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[PREMARSX]' new-bin='true'>
+          <bin default-name='true' value='&quot;Almost always wrong &amp; Always wrong&quot;'>
+            <value>&quot;Almost always wrong&quot;</value>
+            <value>&quot;Always wrong&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Sexfreq' datatype='string' name='[SEXFREQ]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Gender' datatype='integer' name='[SEX]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='1' value='male' />
+          <alias key='2' value='female' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='ordinal' />
+      <column-instance column='[PREMARSX]' derivation='None' name='[none:PREMARSX:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.63147' measure-ordering='alphabetic' measure-percentage='0.36853' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:PREMARSX:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sometimes wrong&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Not wrong at all&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Always wrong&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Almost always wrong&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Premarsx (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Not wrong at all&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Almost always wrong &amp; Always wrong&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Always wrong&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Sometimes wrong&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Almost always wrong&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tableau1' name='federated.0rg9tqm1f9clmu1g72omz0rojrak' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rg9tqm1f9clmu1g72omz0rojrak'>
+            <column caption='SexPerYear' datatype='real' default-format='N' name='[Calculation_72902071257739264]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Case [SEXFREQ]&#13;&#10;When &quot;Not at all&quot; Then 0&#13;&#10;When &quot;Once or twice&quot; Then 1.5&#13;&#10;When &quot;Once a month&quot; Then 12&#13;&#10;When &quot;2-3 times a month&quot; Then 30&#13;&#10;When &quot;Weekly&quot; Then 52&#13;&#10;When &quot;2-3 times per week&quot; Then 130&#13;&#10;When &quot;4+ times per week&quot; Then 250&#13;&#10;Else Null&#13;&#10;End' />
+            </column>
+            <column caption='Premarsx' datatype='string' name='[PREMARSX]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Premarsx (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[PREMARSX]' new-bin='true'>
+                <bin default-name='true' value='&quot;Almost always wrong &amp; Always wrong&quot;'>
+                  <value>&quot;Almost always wrong&quot;</value>
+                  <value>&quot;Always wrong&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Sexfreq' datatype='string' name='[SEXFREQ]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_72902071257739264]' derivation='Avg' name='[avg:Calculation_72902071257739264:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PREMARSX]' derivation='None' name='[none:PREMARSX:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:PREMARSX:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:PREMARSX:nk]' />
+              <groupfilter function='member' level='[none:PREMARSX:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:PREMARSX:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[avg:Calculation_72902071257739264:qk]</rows>
+        <cols>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:YEAR:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tableau1' name='federated.0rg9tqm1f9clmu1g72omz0rojrak' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rg9tqm1f9clmu1g72omz0rojrak'>
+            <column datatype='integer' name='[AGE]' role='measure' type='quantitative' />
+            <column caption='Premarsx' datatype='string' name='[PREMARSX]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Premarsx (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[PREMARSX]' new-bin='true'>
+                <bin default-name='true' value='&quot;Almost always wrong &amp; Always wrong&quot;'>
+                  <value>&quot;Almost always wrong&quot;</value>
+                  <value>&quot;Always wrong&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='ordinal' />
+            <column-instance column='[AGE]' derivation='Avg' name='[avg:AGE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PREMARSX]' derivation='None' name='[none:PREMARSX:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:PREMARSX:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:PREMARSX:nk]' />
+              <groupfilter function='member' level='[none:PREMARSX:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:PREMARSX:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[avg:AGE:qk]</rows>
+        <cols>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:YEAR:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tableau1' name='federated.0rg9tqm1f9clmu1g72omz0rojrak' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rg9tqm1f9clmu1g72omz0rojrak'>
+            <column datatype='integer' name='[AGE]' role='measure' type='quantitative' />
+            <column caption='SexPerYear' datatype='real' default-format='N' name='[Calculation_72902071257739264]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Case [SEXFREQ]&#13;&#10;When &quot;Not at all&quot; Then 0&#13;&#10;When &quot;Once or twice&quot; Then 1.5&#13;&#10;When &quot;Once a month&quot; Then 12&#13;&#10;When &quot;2-3 times a month&quot; Then 30&#13;&#10;When &quot;Weekly&quot; Then 52&#13;&#10;When &quot;2-3 times per week&quot; Then 130&#13;&#10;When &quot;4+ times per week&quot; Then 250&#13;&#10;Else Null&#13;&#10;End' />
+            </column>
+            <column caption='Premarsx' datatype='string' name='[PREMARSX]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Premarsx (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[PREMARSX]' new-bin='true'>
+                <bin default-name='true' value='&quot;Almost always wrong &amp; Always wrong&quot;'>
+                  <value>&quot;Almost always wrong&quot;</value>
+                  <value>&quot;Always wrong&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Sexfreq' datatype='string' name='[SEXFREQ]' role='dimension' type='nominal' />
+            <column-instance column='[AGE]' derivation='Avg' name='[avg:AGE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_72902071257739264]' derivation='Avg' name='[avg:Calculation_72902071257739264:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PREMARSX]' derivation='None' name='[none:PREMARSX:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:PREMARSX:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:PREMARSX:nk]' />
+              <groupfilter function='member' level='[none:PREMARSX:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:PREMARSX:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[avg:AGE:qk]</rows>
+        <cols>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[avg:Calculation_72902071257739264:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tableau1' name='federated.0rg9tqm1f9clmu1g72omz0rojrak' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rg9tqm1f9clmu1g72omz0rojrak'>
+            <column datatype='integer' name='[AGE]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Binned Age (&lt;40)' datatype='string' name='[Calculation_72902071273558017]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [AGE]&lt;40 THEN &apos;&lt;40&apos;&#13;&#10;ELSE &apos;40+&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Premarsx' datatype='string' name='[PREMARSX]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Premarsx (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[PREMARSX]' new-bin='true'>
+                <bin default-name='true' value='&quot;Almost always wrong &amp; Always wrong&quot;'>
+                  <value>&quot;Almost always wrong&quot;</value>
+                  <value>&quot;Always wrong&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_72902071273558017]' derivation='None' name='[none:Calculation_72902071273558017:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PREMARSX]' derivation='None' name='[none:PREMARSX:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:PREMARSX:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:PREMARSX:nk]' />
+              <groupfilter function='member' level='[none:PREMARSX:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:PREMARSX:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:Calculation_72902071273558017:nk] * [federated.0rg9tqm1f9clmu1g72omz0rojrak].[pcto:sum:Number of Records:qk])</rows>
+        <cols>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:YEAR:ok]</cols>
+        <percentages enabled='true' mode='cell-in-pane' />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>Analysis on pre-marital sex</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='185' />
+          <format attr='color' value='#ffffff' />
+          <format attr='font-weight' value='bold' />
+          <format attr='font-size' value='10' />
+          <format attr='background-color' value='#e15759' />
+          <format attr='font-family' value='Tableau Bold' />
+        </style-rule>
+      </style>
+      <size maxheight='764' maxwidth='1016' minheight='764' minwidth='1016' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='1' param='vert' removable='false' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='6415' id='3' type='title' w='100000' x='0' y='0' />
+            <zone fixed-size='125' h='17409' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='100000' x='0' y='6415' />
+            <zone h='75652' id='5' paired-zone-id='4' removable='false' type='flipboard' w='100000' x='0' y='23824'>
+              <flipboard active-id='1' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='No. of times people had sex in previous years having different openions on pre-marital sex' captured-sheet='Sheet 1' id='1' />
+                  <story-point caption='openion of different Age group of people on pre-marital sex in previous years ' captured-sheet='Sheet 2' id='2' />
+                  <story-point caption='no. of times people of different age group having sex per year.' captured-sheet='Sheet 3' id='3' />
+                  <story-point caption='How the openion of people is changing for pre-marital sex over years' captured-sheet='Sheet 4' id='4' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]</field>
+            <field>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]</field>
+            <field>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]</field>
+            <field>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[Premarsx (group)]</field>
+            <field>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:Calculation_72902071273558017:nk]</field>
+            <field>[federated.0rg9tqm1f9clmu1g72omz0rojrak].[none:YEAR:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+      Y1bz/wCyG4NO6jSEbQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
